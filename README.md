@@ -39,40 +39,5 @@ Hệ thống kết hợp sức mạnh của nhiều chuẩn mật mã công nghi
 * **Database:** MongoDB (kết hợp với Beanie ODM cho thao tác Async).
 * **Kiểm thử:** Vitest (Frontend), Pytest (Backend) với độ bao phủ 108 Test Cases.
 
-## 💻 Hướng dẫn cài đặt
-
-### 1. Backend (FastAPI)
-```bash
-# Tạo môi trường ảo và kích hoạt
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# .\venv\Scripts\activate # Windows
-
-# Cài đặt thư viện
-pip install -r requirements.txt
-
-# Khởi chạy server
-uvicorn app.main:app --reload --port 8000
-```
-
-### 2. Frontend (React/Vite)
-```bash
-# Cài đặt các gói phụ thuộc
-npm install
-
-# Khởi chạy môi trường phát triển
-npm run dev
-```
-
-### 3. Cấu hình biến môi trường (.env)
-Tạo file `.env` tại thư mục backend chứa các biến cần thiết:
-```env
-MONGO_URI=mongodb://localhost:27017/chat_e2ee
-JWT_SECRET=your_super_secret_key
-JWT_ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE=30
-CORS_ORIGINS=http://localhost:5173
-```
-
 ---
 *Dự án thực hiện tại TP. Hồ Chí Minh – 2025*
